@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpane" prefHeight="410.0" prefWidth="700.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="billingapp.Controller">
+<children>
+    <AnchorPane layoutX="378.0" opacity="0.0" prefHeight="46.0" prefWidth="322.0" style="-fx-background-color: red;">
+        <effect>
+            <Lighting>
+                <bumpInput>
+                    <Shadow />
+                </bumpInput>
+                <light>
+                </light>
+            </Lighting>
+        </effect>
+    </AnchorPane>
+    <ImageView fitHeight="410.0" fitWidth="700.0" layoutY="106.0" opacity="0.77" pickOnBounds="true" smooth="false" styleClass="button" AnchorPane.bottomAnchor="1.0">
+        <image>
+            <Image url="@firstpage.jpg" />
+        </image>
+    </ImageView>
+    <Button fx:id="loginbuttonid" layoutX="27.0" layoutY="34.0"  stylesheets="@buttonstyle.css" mnemonicParsing="false" onAction="#onloginbuttonclick" prefHeight="40.0" prefWidth="129.0" text="LOGIN" />
+    <Button fx:id="cancelbuttonid" layoutX="539.0" layoutY="347.0" mnemonicParsing="false" onAction="#oncancelbuttonclick" prefHeight="40.0" prefWidth="129.0" text="CANCEL" />
+    <Button fx:id="aboutbuttonid" layoutX="167.0" layoutY="34.0" mnemonicParsing="false" onAction="#onaboutbuttonclick" prefHeight="40.0" prefWidth="129.0" text="ABOUT" />
+    <Button fx:id="adminbuttonid" layoutX="232.0" layoutY="156.0" mnemonicParsing="false" onAction="#onadminbuttonclick" prefHeight="53.0" prefWidth="192.0" text="ADMIN" visible="false">
+        <font>
+            <Font name="Arial Black" size="18.0" />
+        </font>
+    </Button>
+    <Button fx:id="empbuttonid" layoutX="232.0" layoutY="222.0" mnemonicParsing="false" onAction="#onemployeebuttonclick" prefHeight="53.0" prefWidth="192.0" text="EMPLOYEE" visible="false">
+        <font>
+            <Font name="Arial Black" size="18.0" />
+        </font>
+    </Button>
+    <Label fx:id="label1" layoutX="232.0" layoutY="118.0" prefHeight="38.0" prefWidth="228.0">
+        <font>
+            <Font name="Arial Black" size="24.0" />
+        </font>
+    </Label>
+    <Button fx:id="backbuttonfromchoiceid" layoutX="232.0" layoutY="286.0" mnemonicParsing="false" onAction="#onbackbuttonfromchoice" prefHeight="53.0" prefWidth="192.0" text="BACK" visible="false">
+        <font>
+            <Font name="Arial Black" size="18.0" />
+        </font>
+    </Button>
+</children>
+</AnchorPane>

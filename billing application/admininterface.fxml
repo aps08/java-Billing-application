@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpane" prefHeight="410.0" prefWidth="700.0" stylesheets="@buttonstyle.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="billingapp.Controller">
+    <children>
+        <AnchorPane layoutX="378.0" opacity="0.0" prefHeight="46.0" prefWidth="322.0" style="-fx-background-color: red;">
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                    </light>
+                </Lighting>
+            </effect>
+        </AnchorPane>
+        <ImageView fitHeight="410.0" fitWidth="700.0" layoutY="106.0" opacity="0.77" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="1.0">
+            <image>
+                <Image url="@marekt.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="logoutbutton" layoutX="563.0" layoutY="356.0" mnemonicParsing="false" onAction="#logoutfromadmininterface" prefHeight="40.0" prefWidth="122.0" text="LOG OUT" AnchorPane.rightAnchor="14.600000000000023">
+            <font>
+                <Font name="Arial Black" size="18.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="addbuttonforadmin" layoutX="21.0" layoutY="356.0" mnemonicParsing="false" onAction="#onaddbuttonclickforadmin" prefHeight="40.0" prefWidth="71.0" text="ADD" visible="false">
+            <font>
+                <Font name="Arial Black" size="18.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="addadminbutton" layoutX="21.0" layoutY="26.0" mnemonicParsing="false" onAction="#onaddadminbuttonclick" prefHeight="40.0" prefWidth="152.0" text="ADD ADMIN">
+            <font>
+                <Font name="Arial Black" size="18.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="addempployeebutton" layoutX="185.0" layoutY="26.0" mnemonicParsing="false" onAction="#onaddemployeebuttonclick" prefHeight="40.0" prefWidth="152.0" text="ADD EMPLOYEE">
+            <font>
+                <Font name="Arial Black" size="18.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Button fx:id="addproductbutton" layoutX="350.0" layoutY="26.0" mnemonicParsing="false" onAction="#onaddproductbuttonclick" prefHeight="40.0" prefWidth="152.0" text="ADD PRODUCT">
+            <font>
+                <Font name="Arial Black" size="18.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Pane layoutX="21.0" layoutY="84.0" prefHeight="242.0" prefWidth="526.0">
+            <children>
+                <TextField fx:id="textfield2" layoutX="198.0" layoutY="50.0" visible="false" />
+                <TextField fx:id="textfield7" layoutX="198.0" layoutY="160.0" visible="false" />
+                <TextField fx:id="textfield5" layoutX="370.0" layoutY="109.0" visible="false" />
+                <TextField fx:id="textfield3" layoutX="370.0" layoutY="50.0" visible="false" />
+                <TextField fx:id="textfield6" layoutX="21.0" layoutY="160.0" visible="false" />
+                <TextField fx:id="textfield4" layoutX="198.0" layoutY="109.0" visible="false" />
+                <TextField fx:id="textfield1" layoutX="21.0" layoutY="50.0" visible="false" />
+                <PasswordField fx:id="passwordfield1" layoutX="21.0" layoutY="109.0" visible="false" />
+            </children>
+        </Pane>
+        <Button fx:id="showtablebuttonid" layoutX="519.0" layoutY="26.0" mnemonicParsing="false" onAction="#onshowtablebuttonclick" prefHeight="40.0" prefWidth="152.0" text="SHOW TABLES">
+            <font>
+                <Font name="Arial Black" size="18.0" />
+            </font>
+            <effect>
+                <DropShadow />
+            </effect>
+        </Button>
+        <Label layoutX="280.0" layoutY="368.0" prefHeight="26.0" prefWidth="267.0" text="You can delete item inside show tables.">
+            <font>
+                <Font name="Arial Black" size="12.0" />
+            </font>
+        </Label>
+      <Button fx:id="addbuttonforemp" layoutX="106.0" layoutY="356.0" mnemonicParsing="false" onAction="#onaddbuttonclickforemp" prefHeight="40.0" prefWidth="71.0" text="ADD" visible="false">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="addbuttonforproduct" layoutX="193.0" layoutY="356.0" mnemonicParsing="false" onAction="#onaddbuttonclickforproduct" prefHeight="40.0" prefWidth="71.0" text="ADD" visible="false">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="mainpane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="billingapp.empcontroller"
+            prefHeight="410.0" prefWidth="700.0" stylesheets="@buttonstyle.css">
+    <children>
+        <AnchorPane layoutX="378.0" opacity="0.0" prefHeight="46.0" prefWidth="322.0" style="-fx-background-color: red;">
+            <effect>
+                <Lighting>
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                    </light>
+                </Lighting>
+            </effect>
+        </AnchorPane>
+        <Text layoutX="86.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="410.703125" AnchorPane.leftAnchor="125.0">
+            <font>
+                <Font name="Arial Black" size="32.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="410.0" fitWidth="700.0" layoutY="106.0" opacity="0.77" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="1.0">
+            <image>
+                <Image url="@marekt.jpg" />
+            </image>
+        </ImageView>
+        <Button layoutX="563.0" layoutY="356.0" mnemonicParsing="false" onAction="#logout" prefHeight="40.0" prefWidth="122.0" text="SIGN OUT" AnchorPane.rightAnchor="14.600000000000023">
+            <font>
+                <Font name="Arial Black" size="18.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tableview2" layoutX="428.0" layoutY="48.0" onMouseClicked="#removefromcartonclick" prefHeight="272.0" prefWidth="262.0" style="-fx-border-color: blue;" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn fx:id="productname" prefWidth="157.39999389648438" text="Product Name" />
+                <TableColumn fx:id="productprice" prefWidth="98.60003662109375" text="Product Price" />
+            </columns>
+        </TableView>
+        <Button fx:id="billproduct" layoutX="425.0" layoutY="356.0" mnemonicParsing="false" onAction="#billpayment"
+                prefHeight="40.0" prefWidth="122.0" text="BILL">
+            <font>
+                <Font name="Arial Black" size="18.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tableview" layoutX="14.0" layoutY="48.0" onMouseClicked="#putincartonclick" prefHeight="303.0" prefWidth="411.0" style="-fx-border-color: blue;" tableMenuButtonVisible="true">
+            <columns>
+                <TableColumn editable="false" prefWidth="119.99993515014648" text="Product ID">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="productID" />
+                    </cellValueFactory>
+                </TableColumn>
+                <TableColumn editable="false" prefWidth="286.40003967285156" text="Product Name">
+                    <cellValueFactory>
+                        <PropertyValueFactory property="productname" />
+                    </cellValueFactory>
+                </TableColumn>
+            </columns>
+        </TableView>
+        <MenuButton layoutX="14.0" layoutY="10.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="104.0" style="-fx-border-color: blue;" text="Category">
+            <items>
+                <MenuItem mnemonicParsing="false" onAction="#categorynone" text="None" />
+                <MenuItem mnemonicParsing="false" onAction="#categorychocolate" text="Chocolate" />
+                <MenuItem mnemonicParsing="false" onAction="#categorybabycare" text="Baby care" />
+                <MenuItem mnemonicParsing="false" onAction="#categorysnacks" text="Snacks" />
+                <MenuItem mnemonicParsing="false" onAction="#categorynamkeen" text="Namkeen" />
+                <MenuItem mnemonicParsing="false" onAction="#categoryelectronics" text="Electronics" />
+                <MenuItem mnemonicParsing="false" onAction="#categorydairy" text="Dairy" />
+                <MenuItem mnemonicParsing="false" onAction="#categorypersonalcare" text="Personal care" />
+                <MenuItem mnemonicParsing="false" onAction="#categoryspices" text="Spices" />
+                <MenuItem mnemonicParsing="false" onAction="#categorytoast" text="Toast" />
+                <MenuItem mnemonicParsing="false" onAction="#categoryvegetables" text="Vegetables" />
+            </items>
+            <font>
+                <Font name="Arial Black" size="13.0" />
+            </font>
+        </MenuButton>
+        <Label layoutX="451.0" layoutY="13.0" prefHeight="26.0" prefWidth="208.0" text="Customer cart below">
+            <font>
+                <Font name="Arial Black" size="17.0" />
+            </font>
+        </Label>
+        <Label fx:id="totallabel" layoutX="428.0" layoutY="320.0" prefHeight="26.0" prefWidth="131.0" text="Total price">
+            <font>
+                <Font name="Arial Black" size="17.0" />
+            </font>
+        </Label>
+        <Label fx:id="pricevaluelabel" layoutX="563.0" layoutY="320.0" prefHeight="20.0" prefWidth="122.0">
+            <font>
+                <Font name="Arial Black" size="17.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane fx:id="mainpane" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="billingapp.showtable"
+            prefHeight="410.0" prefWidth="700.0" stylesheets="@buttonstyle.css">
+    <AnchorPane layoutX="378.0" opacity="0.0" prefHeight="46.0" prefWidth="322.0" style="-fx-background-color: red;">
+        <effect>
+            <Lighting>
+                <bumpInput>
+                    <Shadow />
+                </bumpInput>
+                <light>
+                </light>
+            </Lighting>
+        </effect>
+    </AnchorPane>
+    <ImageView fitHeight="410.0" fitWidth="700.0" layoutY="106.0" opacity="0.77" pickOnBounds="true" smooth="false" AnchorPane.bottomAnchor="1.0">
+        <image>
+            <Image url="@marekt.jpg" />
+        </image>
+    </ImageView>
+    <TableView fx:id="tableviewforshowingtables" layoutX="14.0" layoutY="42.0" onMouseClicked="#onmouseclickremoverow" prefHeight="310.0" prefWidth="678.0">
+        <columns>
+            <TableColumn fx:id="first" prefWidth="93.79998588562012" text="C1" />
+            <TableColumn fx:id="second" prefWidth="123.4000015258789" text="C2" />
+            <TableColumn fx:id="third" prefWidth="113.19998168945312" text="C3" />
+            <TableColumn fx:id="fourth" prefWidth="123.39996337890625" text="C4" />
+            <TableColumn fx:id="fifth" prefWidth="115.39993286132812" text="C5" />
+            <TableColumn fx:id="sixth" editable="false" prefWidth="105.4000244140625" text="C6" />
+        </columns>
+    </TableView>
+    <Button layoutX="566.0" layoutY="361.0" mnemonicParsing="false" onAction="#backfromshowtables" prefHeight="40.0" prefWidth="112.0" text="BACK" />
+    <Label layoutX="14.0" layoutY="361.0" prefHeight="40.0" prefWidth="537.0" text="Click on any row to remove it. Item will be removed permanently">
+        <font>
+            <Font name="Arial Black" size="15.0" />
+        </font>
+    </Label>
+    <Label layoutX="345.0" layoutY="3.0" prefHeight="40.0" prefWidth="193.0" text="Select table here">
+        <font>
+            <Font name="Arial Black" size="18.0" />
+        </font>
+    </Label>
+    <SplitMenuButton layoutX="526.0" layoutY="6.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="139.0" style="-fx-border-color: blue;" text="TABLES">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#showadmintable" text="Admin Table" />
+            <MenuItem mnemonicParsing="false" onAction="#showempployeetable" text="Employee Table" />
+            <MenuItem mnemonicParsing="false" onAction="#showproducttable" text="Product Table" />
+            <MenuItem mnemonicParsing="false" onAction="#showcompanytable" text="Company Table" />
+            <MenuItem mnemonicParsing="false" onAction="#showcustomertable" text="Customer Table" />
+            <MenuItem mnemonicParsing="false" onAction="#showpurchasetable" text="Purchase Table" />
+        </items>
+        <font>
+            <Font name="Arial Black" size="15.0" />
+        </font>
+    </SplitMenuButton>
+
+</AnchorPane>

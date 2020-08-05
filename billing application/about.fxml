@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainpane" prefHeight="410.0" prefWidth="700.0" stylesheets="@buttonstyle.css"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="billingapp.Controller">
+    <children>
+        <ImageView fitHeight="411.0" fitWidth="700.0" layoutY="-1.0" opacity="0.78" pickOnBounds="true">
+            <image>
+                <Image url="@firstpage.jpg" />
+            </image>
+        </ImageView>
+        <Button layoutX="572.0" layoutY="357.0" mnemonicParsing="false" onAction="#backtoFirstpage" opacity="0.85" prefHeight="32.0" prefWidth="106.0" text="BACK" />
+        <FlowPane layoutX="-4.0" layoutY="-1.0">
+            <AnchorPane opacity="0.19" prefHeight="32.0" prefWidth="707.0" style="-fx-background-color: blue;">
+                <effect>
+                    <InnerShadow choke="1.0" height="255.0" radius="127.0" width="255.0" />
+                </effect>
+            </AnchorPane>
+        </FlowPane>
+        <Slider disable="true" layoutX="520.0" layoutY="93.0" orientation="VERTICAL" prefHeight="302.0" prefWidth="14.0" />
+        <Label layoutX="14.0" layoutY="31.0" prefHeight="32.0" prefWidth="230.0" text="Description">
+            <font>
+                <Font name="Arial Black" size="32.0" />
+            </font>
+        </Label>
+        <TextArea editable="false" layoutX="14.0" layoutY="75.0" prefHeight="320.0" prefWidth="537.0" scrollLeft="NaN" text="FEW  THINGS YOU NEED TO BE CAREFUL ABOUT&#10;1. EMAIL ID OF ADMIN : Email id of admin should be of format  &quot;abc@supermart.com&quot;.&#10;2. EMAIL ID OF EMPLOYEE : Email id of employee should be of format&#10;   &quot;abc.emp@supermart.com&quot;.&#10;3. PASSWORD FOR BOTH ADMIN AND EMPLOYEE : Password should be of more than 7 &#10;   characters.&#10;4. PHONE OF CUSTOMER : Phone number of customer should be of  7 characters neither &#10;    more nor less.&#10;5. EMPLAOYEE INTERFACE : When employee is collecting the payment employee should only&#10;   enter his/her first name used in the emaild ID and other post fix will be added. Example:&#10;  if employee's ID is &quot;abc.emp@supermart.com&quot; he should only enter &quot;abc&quot; in the dialog box&#10;&#10;DISCLAIMER: USING THE CODE FOR COMMERCIAL PURPOSE IS UNETHICAL. ALL THE RIGHTS &#10; OF THIS PROJECT ARE WITH ME. IN CASE YOUR WANT THIS PROJECT CANCONATCT&#10;ON MY TWITTER HANDLE.&#10; &#10;DETAILS ABOUT THE OWNER/ CREATOR OF THE PROJECT&#10;&#10;Billing Application by ANOOP PRATAP SINGH  : &#10;This project uses JDK14, JAVAFX14, SCENE BUILDER and SQLite for operation.Project is created&#10;to learn about Java programming and how it works with FXML. If the project does not run on &#10;your system try installing the required software(Most recommended : SQLite) and run the code&#10;IF YOU LIKE MY PROJECT SEND ME 'hii' ON MY TWITTER HANDLE @AnoopPratapSi10.&#10;&#10;JDK14  : The Java Development Kit version 14 is an implementation of either one of the Java &#10;Platform,  Standard Edition, Java Platform, Enterprise Edition, or Java Platform, Micro Edition &#10;platforms released by Oracle Corporation in the form of a binary product aimed at Java &#10;developers on Solaris, Linux, macOS or Windows.&#10;Download Link :  https://www.oracle.com/java/technologies/javase-jdk14-downloads.html&#10;&#10;JAVAFX14 : JavaFX is a library for building rich client applications with Java. It provides an API &#10;for designing GUI applications that run on almost every device with Java support. In Java 8, 9,&#10;and 10 no additional setup is necessary to start working with the JavaFX library. The project &#10;will be removed from the JDK starting with JDK 11.&#10;Download Link :  https://gluonhq.com/products/javafx/&#10;&#10;SCENE BUILDER : A Visual Layout Tool for JavaFX Applications. JavaFX Scene Builder is a visual&#10;layout tool that lets users quickly design JavaFX application user interfaces, without coding.&#10;The result is an FXML file that can then be combined with a Java project by binding the UI to &#10;the application's logic. &#10;Download Link : https://gluonhq.com/products/scene-builder/&#10;&#10;SQLite :  SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, &#10;SQL database engine. It is the most used database engine in the world. It is an in-process &#10;library and its code is publicly available.&#10;Download Link : https://www.sqlite.org/download.html" />
+    </children>
+</AnchorPane>
