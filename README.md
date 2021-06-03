@@ -27,6 +27,8 @@ This project is a GUI based billing application just like you see in the superma
     - Can add products.
     - Can delete products.
 
+Download: ``git clone https://github.com/aps08/java-Billing-application``
+
 ### Few things which need to be taken care of:
 
 - Admin email should be ending with ``@supermart.com``
