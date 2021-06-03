@@ -4,11 +4,12 @@
  <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="pbuild">
  <img src="https://img.shields.io/badge/maintained-no-red" alt="nmaintained"> 
  <img src="https://img.shields.io/badge/responsive-no-red" alt="not reponsive"> 
- 
- <img src="https://img.shields.io/badge/JDK-14-brightgreen" alt="jdk14"> 
- <img src="https://img.shields.io/badge/IDEA-Intellij-red" alt="intellij"> 
- <img src="https://img.shields.io/badge/Database-SQLite-blue" alt="sqllite"> 
- <img src="https://img.shields.io/badge/Javafx-14-red" alt="javafx14"> 
+ </p>
+ <p>
+ <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="jdk14"> 
+ <img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="intellij"> 
+ <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="sqllite"> 
+ <img src="https://img.shields.io/badge/Javafx%20-FFA500.svg?style=for-the-badge" alt="javafx14"> 
 </p>
 
 ## Table of content
