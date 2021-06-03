@@ -1,9 +1,19 @@
 # Billing application
+<p align="left">
+ <img src="https://img.shields.io/badge/contributors-1-blue" alt="4contributors"> 
+ <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="pbuild">
+ <img src="https://img.shields.io/badge/maintained-no-red" alt="nmaintained"> 
+ <img src="https://img.shields.io/badge/responsive-no-red" alt="not reponsive"> 
+ 
+ <img src="https://img.shields.io/badge/JDK-14-brightgreen" alt="jdk14"> 
+ <img src="https://img.shields.io/badge/IDEA-Intellij-red" alt="intellij"> 
+ <img src="https://img.shields.io/badge/Database-SQLite-blue" alt="sqllite"> 
+ <img src="https://img.shields.io/badge/Javafx-14-red" alt="javafx14"> 
+</p>
 
 ## Table of content
 - [Intro](#intro)
 - [Few things which need to be taken care of](#few-things-which-need-to-be-taken-care-of)
-- [Build](#build)
 - [Connect](#connect)
 
 ### Intro
@@ -29,19 +39,7 @@ This project is a GUI based billing application just like you see in the superma
 - Please do not Use it for your own benefit.
 <!-- - Here is the [demo](https://www.youtube.com/channel/UCu_vHY1svvi8mRjccSpSfbw) of this project. -->
 
-### Build:
 
-<p align="left">
- <img src="https://img.shields.io/badge/contributors-1-blue" alt="4contributors"> 
- <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="pbuild">
- <img src="https://img.shields.io/badge/maintained-no-red" alt="nmaintained"> 
- <img src="https://img.shields.io/badge/responsive-no-red" alt="not reponsive"> 
- 
- <img src="https://img.shields.io/badge/JDK-14-brightgreen" alt="jdk14"> 
- <img src="https://img.shields.io/badge/IDEA-Intellij-red" alt="intellij"> 
- <img src="https://img.shields.io/badge/Database-SQLite-blue" alt="sqllite"> 
- <img src="https://img.shields.io/badge/Javafx-14-red" alt="javafx14"> 
-</p>
 
 ### Connect
 <p>
