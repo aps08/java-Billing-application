@@ -1,6 +1,5 @@
 # Billing application
 <p align="left">
- <img src="https://img.shields.io/badge/contributors-1-blue" alt="4contributors"> 
  <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="pbuild">
  <img src="https://img.shields.io/badge/maintained-no-red" alt="nmaintained"> 
  <img src="https://img.shields.io/badge/responsive-no-red" alt="not reponsive"> 
